@@ -20,9 +20,9 @@ def consolidate_cart(cart)
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
   up_cart = []
-  container = 0 
+  container = 0
+  count = 1 
   while container < cart.length do
-    count = 1
     up_hash = cart[container]
     # binding.pry
     up_hash[:count] = count
