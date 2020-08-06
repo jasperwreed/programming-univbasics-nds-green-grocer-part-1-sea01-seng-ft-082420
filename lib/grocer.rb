@@ -28,6 +28,9 @@ def consolidate_cart(cart)
     up_hash[:count] = count
     if !up_cart.include?(up_hash)
       up_cart << up_hash
+    else
+      count += 1
+      up_hash[:count] = count
     end
     container += 1
   end
